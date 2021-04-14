@@ -2,11 +2,22 @@
     background-image: url(../../../dist/assets/img/background.png);
     background-size: cover;
 
+    &> .wrapper-social-media {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0;
+    }
+
     .photo-perfil {
+        display: none;
         width: 430px;
         height: 430px;
         border-radius: 50%;
         padding: 15px;
         background: linear-gradient(to right, $color-primary, white);
+    }
+
+    .skills-wrapper {
+        display: none;
     }
 }
