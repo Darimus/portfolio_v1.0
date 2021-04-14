@@ -1,6 +1,41 @@
-.header-menu {
+.header-menu { 
+    background-color: $color-primary;
+
     .portfolio-title {
         font-size: 30px;
-        color: $color-primary;
+        font-weight: bold;
+        color: #fff;
+
+        .color-portfolio {
+            color: $color-secondary;
+        }
     }
+
+    button {
+        background-color: #fff;
+    }
+
+    ul {
+        font-size: 20px;
+    }
+}
+
+// Color dos itens dentro do menu
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.89);
+}
+
+// Tirando o padding top do menu e Deixando o menu Fixed
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 0;
+    z-index: 1030;
 }
