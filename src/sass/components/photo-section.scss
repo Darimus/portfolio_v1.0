@@ -1,0 +1,12 @@
+.photo-section {
+    background-image: url(../../../dist/assets/img/background.png);
+    background-size: cover;
+
+    .photo-perfil {
+        width: 430px;
+        height: 430px;
+        border-radius: 50%;
+        padding: 15px;
+        background: linear-gradient(to right, $color-primary, white);
+    }
+}
