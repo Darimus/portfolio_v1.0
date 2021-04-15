@@ -35,3 +35,15 @@
         margin-bottom: 3rem;
     }
 }
+
+.about-position {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.menu-about-position {
+    display: flex;
+    height: 100%;
+    padding-bottom: 62px;
+}

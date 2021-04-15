@@ -1,6 +1,9 @@
 .photo-section {
     background-image: url(../../../dist/assets/img/background.png);
     background-size: cover;
+    
+    bottom: 0;
+    height: fit-content;
 
     &> .wrapper-social-media {
         display: flex;
@@ -15,14 +18,23 @@
         border-radius: 50%;
         padding: 15px;
         background: linear-gradient(to right, $color-primary, white);
+
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
     }
 
-    .photo-perfil-display {
+    /* .photo-perfil-display {
         display: block;
-    }
+    } */
 
     .skills-wrapper {
         display: none;
     }
+}
+
+.photo-skill-position {
+    position: relative;
 }
 
