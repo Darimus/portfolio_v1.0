@@ -46,3 +46,17 @@
     color: #fff;
     font-weight: bold;
 }
+
+// Para desktop agora
+
+@media (min-width: 768px) {
+
+    .header-menu {
+        position: absolute;
+        top: inherit;
+    }
+
+    .navbar {
+        position: relative;
+    }
+}

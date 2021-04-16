@@ -19,20 +19,7 @@
         border-radius: 50%;
         padding: 15px;
         background: linear-gradient(to right, $color-primary, white);
-
-        /* position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
     }
-
-    /* .photo-perfil-display {
-        display: block;
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    } */
 
     .skills-wrapper {
         display: none;
@@ -43,11 +30,26 @@
     position: relative;
 }
 
-// Tamanho photo perfil
+// Para desktop agora
 
-/* @media (min-width: 320px) {
-    .photo-section .photo-perfil {
-        width: 200px;
-        height: 200px;
+@media (min-width: 768px) {
+    .photo-section {
+        margin-top: 0;
+        height: auto;
+
+        .photo-perfil {
+            display: block;
+            margin: 100px auto 0;
+        }
+
+        .skills-wrapper {
+            display: block;
+            list-style: none;
+            color: #fff;
+            text-align: center;
+            padding: 0;
+            margin-top: 30px;
+            font-size: 20px;
+        }
     }
-} */
+}

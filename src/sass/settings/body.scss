@@ -1,6 +1,12 @@
-html, 
-body {
+html, body {
     position: relative;
     min-height: 100%;
     top: 0px;
 }
+
+// Para desktop
+/* @media (min-width: 768px) {
+    html, body {
+        height: -webkit-fill-available;
+    }
+} */

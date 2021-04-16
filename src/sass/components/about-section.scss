@@ -26,6 +26,7 @@
 
     h2 {
         margin-bottom: 35px;
+        color: $color-primary;
     }
 
     .skill-icon {
@@ -53,4 +54,31 @@
 .menu-about-position {
     display: flex;
     height: 100%;
+}
+
+// Para desktop agora
+
+@media (min-width: 768px) {
+    .align-items-center {
+        justify-content: center;
+        text-align: left;
+        height: 100%;
+
+        h1 {
+            width: 100%;
+        }
+
+        .photo-perfil {
+            display: none;
+        }
+    }
+
+    .menu-about-size {
+        padding: 0;
+    }
+
+    .menu-about-position {
+        display: block;
+        height: auto;
+    }
 }
