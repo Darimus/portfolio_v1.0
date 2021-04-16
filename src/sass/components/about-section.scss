@@ -1,7 +1,15 @@
 .about-section {
     text-align: center;
     padding: 0 24px;
-    font-size: 20px;
+
+    .photo-perfil {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin-top: 40px;
+        padding: 15px;
+        background: linear-gradient(to right, $color-primary, white);
+    }
 
     .role-description {
         text-align: justify;
@@ -45,5 +53,4 @@
 .menu-about-position {
     display: flex;
     height: 100%;
-    padding-bottom: 62px;
 }

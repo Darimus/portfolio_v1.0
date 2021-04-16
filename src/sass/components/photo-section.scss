@@ -1,8 +1,9 @@
 .photo-section {
     background-image: url(../../../dist/assets/img/background.png);
     background-size: cover;
-    
+    margin-top: 36px;
     bottom: 0;
+    height: -moz-fit-content;
     height: fit-content;
 
     &> .wrapper-social-media {
@@ -27,6 +28,10 @@
 
     /* .photo-perfil-display {
         display: block;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     } */
 
     .skills-wrapper {
@@ -38,3 +43,11 @@
     position: relative;
 }
 
+// Tamanho photo perfil
+
+/* @media (min-width: 320px) {
+    .photo-section .photo-perfil {
+        width: 200px;
+        height: 200px;
+    }
+} */
