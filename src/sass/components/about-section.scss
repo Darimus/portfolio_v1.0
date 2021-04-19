@@ -64,13 +64,17 @@
         text-align: left;
         height: 100%;
 
-        h1 {
+        h1, h2 {
             width: 100%;
         }
 
         .photo-perfil {
             display: none;
         }
+    }
+
+    .about-position {
+        margin-top: 0 !important;
     }
 
     .menu-about-size {
@@ -80,5 +84,26 @@
     .menu-about-position {
         display: block;
         height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-section {
+        width: 563px;
+        margin: 0 auto;
+
+        .skill-wrapper {
+            display: flex;
+            align-items: center;
+
+            .skill-icon2 {
+                order: 2;
+            }
+
+            .skill-description {
+                margin: 15px 0;
+            }
+        }
+        
     }
 }

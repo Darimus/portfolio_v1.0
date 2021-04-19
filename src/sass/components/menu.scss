@@ -20,6 +20,15 @@
         font-size: 20px;
     }
 }
+// Tirando o padding top do menu e Deixando o menu Fixed
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 0;
+    z-index: 1030;
+}
 
 // Color dos itens dentro do menu
 .navbar-light .navbar-nav .nav-link.active {
@@ -31,16 +40,6 @@
     color: rgba(255, 255, 255, 0.89);
 }
 
-// Tirando o padding top do menu e Deixando o menu Fixed
-.navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding-top: 0;
-    z-index: 1030;
-}
-
 // Mudando a cor do Hover no menu 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #fff;
@@ -50,13 +49,38 @@
 // Para desktop agora
 
 @media (min-width: 768px) {
-
     .header-menu {
         position: absolute;
         top: inherit;
+        background-image: none;
+        background-color: #fff;
+        border-bottom: 0.5px solid $color-primary;
+        border-color: rgba(0,0,0,0.1);
+
+        .portfolio-title {
+            color: $color-primary;
+        }
     }
 
     .navbar {
         position: relative;
+        padding: 0;
     }
+
+// Color dos itens dentro do menu
+    .navbar-light .navbar-nav .nav-link.active {
+        color: $color-primary;
+        font-weight: bold;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: $color-secondary;
+    }
+
+// Mudando a cor do Hover no menu 
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: $color-primary;
+        font-weight: bold;
+    }
+
 }
