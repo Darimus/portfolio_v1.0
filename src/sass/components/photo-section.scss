@@ -61,3 +61,47 @@
         height: 100vh;
     }
 }
+
+@media (min-width: 1340px) {
+    .photo-section {
+        .photo-perfil {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            transform: translate( -30%, -50%);
+            margin-top: 420px;
+        }
+
+        .skills-wrapper {
+            position: absolute;
+            flex-direction: column;
+            text-align: initial;
+            font-size: 25px;
+            margin-top: 345px;
+            margin-left: 239px;
+
+            :nth-child(3n + 1) {
+                margin-left: -15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .photo-section {
+        .photo-perfil {
+            width: 450px;
+            height: 450px;
+        }
+
+        .skills-wrapper {
+            font-size: 40px;
+            margin-top: 292px;
+            margin-left: 356px;
+
+            :nth-child(3n+1) {
+                margin-left: -25px;
+            }
+        }
+    }
+}
