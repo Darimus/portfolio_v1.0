@@ -16,8 +16,8 @@
     }
 
     h1, h2 {
-        font-weight: bold;
         color: $color-secondary;
+        font-weight: 900;
     }
 
     h1 {
@@ -27,6 +27,12 @@
     h2 {
         margin-bottom: 35px;
         color: $color-primary;
+    }
+
+    h2::after {
+        content: "_";
+        color: $color-secondary;
+        animation: 800ms pisca step-end infinite;
     }
 
     .skill-icon {
@@ -108,5 +114,19 @@
         .skill-angular {
             display: block;
         }
+    }
+}
+
+@keyframes pisca {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
