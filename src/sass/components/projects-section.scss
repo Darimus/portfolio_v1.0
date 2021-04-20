@@ -1,0 +1,43 @@
+.projects-section {
+    height: 100%;
+    margin: 3rem  auto;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .card {
+        height: 486.41px;
+    }
+
+    h1 {
+        text-align: center;
+        color: $color-secondary;
+    }
+
+    h1::after {
+        content: "_";
+        color: $color-primary;
+        animation: 800ms pisca step-end infinite;
+    }
+}
+
+// Arruma margin-top do projects
+@media (min-width: 865px) {
+    .projects-section {
+        margin: 0;
+    }
+}
+
+// Animação
+@keyframes pisca {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
