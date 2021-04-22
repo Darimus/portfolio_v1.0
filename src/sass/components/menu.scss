@@ -46,6 +46,12 @@
     font-weight: bold;
 }
 
+// Arrumando o hover do menu, o elemento desloca para o lado
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    font-weight: normal !important;
+    text-shadow: 1px 0 0;
+}
+
 // Para desktop agora
 
 @media (min-width: 768px) {

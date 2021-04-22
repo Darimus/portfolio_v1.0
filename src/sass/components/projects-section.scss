@@ -1,5 +1,4 @@
 .projects-section {
-    height: 100%;
     margin: 3rem  auto;
     align-items: center;
     justify-content: space-evenly;
@@ -9,14 +8,30 @@
     }
 
     h1 {
-        text-align: center;
+        margin-top: 7rem; 
         color: $color-secondary;
+        font-weight: 800;
+    }
+
+    h2 {
+        margin-bottom: 5rem;
+        color: $color-primary;
+    }
+
+    h1, h2 {
+        text-align: center;
     }
 
     h1::after {
+        content: ":";
+        color: $color-primary;/* 
+        animation: 800ms pisca step-end infinite; */
+    }
+
+    h2::after {
         content: "_";
-        color: $color-primary;
-        animation: 800ms pisca step-end infinite;
+        color: $color-secondary;
+        animation: 700ms pisca step-end infinite;
     }
 }
 

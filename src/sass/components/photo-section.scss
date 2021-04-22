@@ -14,8 +14,8 @@
 
     .photo-perfil {
         display: none;
-        width: 250px;
-        height: 250px;
+        width: 230px;
+        height: 230px;
         border-radius: 50%;
         padding: 15px;
         background: linear-gradient(to right, $color-primary, white);
@@ -109,5 +109,13 @@
 @media (min-height: 1353px) {
     .photo-section {
         height: 100vh;
+    }
+}
+
+@media (max-width: 864px) {
+    .home {
+        .photo-projects {
+            height: auto;
+        }
     }
 }
