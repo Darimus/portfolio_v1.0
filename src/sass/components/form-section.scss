@@ -1,8 +1,20 @@
 .form-section {
     margin: 65px auto 0;
 
-    .btn-primary {
-        margin-top: 15px;
+    .btn-position {
+        text-align: end;
+        
+        .btn-primary {
+            background-image: url(../../../dist/assets/img/background.png);
+            background-size: cover;
+            color: #fff;
+            margin-top: 15px;
+    
+            .img-send {
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 }
 
