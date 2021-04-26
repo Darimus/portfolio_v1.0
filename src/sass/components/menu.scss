@@ -49,7 +49,7 @@
 // Arrumando o hover do menu, o elemento desloca para o lado
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     font-weight: normal !important;
-    text-shadow: 1px 0 0;
+    text-shadow: 0.5px 0 0;
 }
 
 // Para desktop agora
@@ -76,7 +76,8 @@
 // Color dos itens dentro do menu
     .navbar-light .navbar-nav .nav-link.active {
         color: $color-primary;
-        font-weight: bold;
+        text-shadow: 0.5px 0 0;
+        font-weight: normal;
     }
 
     .navbar-light .navbar-nav .nav-link {
