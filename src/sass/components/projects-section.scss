@@ -34,6 +34,16 @@
         color: $color-secondary;
         animation: 700ms pisca step-end infinite;
     }
+
+    .btn-primary {
+        width: 100%;
+        background-image: url(../../../dist/assets/img/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-weight: 700;
+        border: none;
+        border-radius: 20px;
+    }
 }
 
 // Arruma margin-top do projects

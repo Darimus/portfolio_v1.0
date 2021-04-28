@@ -37,6 +37,34 @@
                 color: $color-primary;
             }
         }
+
+        .btn-contact {
+            width: 100%;
+            height: 50px;
+            background-image: url(../../../dist/assets/img/background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: none;
+            border-radius: 30px;
+            margin-bottom: 15px;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 1ms ease-in-out;
+            }
+
+            .img-download {
+                width: 20px;
+                height: 20px;
+                filter: invert(1);
+            }
+
+            a {
+                font-weight: 700;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
     }
 
     :nth-child(3) {
