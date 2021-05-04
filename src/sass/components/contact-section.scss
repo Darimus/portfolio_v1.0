@@ -37,7 +37,7 @@
                 color: $color-primary;
             }
         }
-
+        
         .btn-contact {
             width: 100%;
             height: 50px;
@@ -48,6 +48,10 @@
             border-radius: 30px;
             margin-bottom: 15px;
 
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+
             &:hover {
                 transform: scale(1.05);
                 transition: 1ms ease-in-out;
@@ -57,13 +61,7 @@
                 width: 20px;
                 height: 20px;
                 filter: invert(1);
-            }
-
-            a {
-                font-weight: 700;
-                color: #fff;
-                text-decoration: none;
-            }
+            } 
         }
     }
 
